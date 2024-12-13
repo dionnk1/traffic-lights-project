@@ -20,6 +20,22 @@
     background-color: rgb(41, 43, 44);
 }
 
+.dot{
+    height: 15px;
+    width: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 90%;
+
+    border-radius: 50%;
+    text-align: end;
+
+    cursor: pointer;
+}
+
 .icon{
     color: black;
     font-size: 5rem;
