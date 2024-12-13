@@ -1,0 +1,58 @@
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 600px;
+    background-color: black;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.light {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 43, 44);
+}
+
+.icon{
+    color: black;
+    font-size: 5rem;
+    @media (max-width:800px) {
+        font-size: 4rem;
+    }
+}
+
+.red:hover{
+    background-color: #dc3545 !important;
+    transition: all 0.2s;
+}
+
+.orange:hover{
+    background-color: #fd7e14  !important;
+    transition: all 0.2s;
+}
+
+.green:hover{
+    background-color: #198754  !important;
+    transition: all 0.2s;
+}
+
+.red:hover i, .orange:hover i, .green:hover i{
+    color: black;
+}
+
+.alert-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 8rem;
+}
