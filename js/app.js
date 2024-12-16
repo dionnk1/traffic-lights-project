@@ -14,7 +14,7 @@ const resetButtonStyles = () => {
     orangeBtn.style.backgroundColor = 'rgb(41, 43, 44)';
     greenBtn.style.backgroundColor = 'rgb(41, 43, 44)';
     dotButton.style.backgroundColor = 'rgb(41, 43, 44)';
-    
+
 }
 
 const setAlert = (bgColor, textColor, alertTypeText, alertDescText) => {
@@ -37,7 +37,7 @@ const handleButtonClick = (btn, color, alertColor, alertTypeText, alertDescText,
         if (element) {
             element.style.backgroundColor = color;
             setAlert(alertColor, "rgb(247, 247, 247)", alertTypeText, alertDescText);
-        } else if(element == null){
+        } else if (element == null) {
             resetButtonStyles();
             alertInfo.style.display = 'none';
         }
@@ -46,6 +46,6 @@ const handleButtonClick = (btn, color, alertColor, alertTypeText, alertDescText,
 }
 
 handleButtonClick(redBtn, '#dc3545', '#dc3545', 'Danger', 'Do NOT pass', '.red');
-handleButtonClick(orangeBtn, '#fd7e14',  '#fd7e14',  'Warning!', 'You probably should NOT pass.', '.orange');
+handleButtonClick(orangeBtn, '#fd7e14', '#fd7e14', 'Warning!', 'You probably should NOT pass.', '.orange');
 handleButtonClick(greenBtn, '#198754', '#198754', 'Safe.', 'You can pass now.', '.green');
 handleButtonClick(dotButton, '#dc3545', null, null, null, null);
